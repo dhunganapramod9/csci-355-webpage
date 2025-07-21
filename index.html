@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 355 Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Pramod Dhungana Webpage</div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Course</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Kurose and Ross Author Page</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksforGeeks Web Development</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Browser</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showNavigatorInfo()">Navigator</a></li>
+                        <li><a href="#" onclick="showWindowInfo()">Window</a></li>
+                        <li><a href="#" onclick="showScreenInfo()">Screen</a></li>
+                        <li><a href="#" onclick="showLocationInfo()">Location</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Configuration</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showPasswordForm()">Password</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showDeveloperInfo()">Developer Info</a></li>
+                        <li><a href="#" onclick="showContactForm()">Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Welcome to My Web Development Page</h1>
+            <p>Select an option from the menu above to explore different features.</p>
+            
+            <!-- Dynamic content area -->
+            <div id="dynamic-content">
+                <div class="welcome-message">
+                    <p>This website was built for CSCI 355 at Queens College. It demonstrates my knowledge of HTML, CSS, and JavaScript through interactive features, browser information display, and form handling.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for displaying information -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Password Form Modal -->
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Password Configuration</h2>
+            <form id="passwordForm">
+                <div class="form-group">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="password-feedback"></div>
+                </div>
+                <div class="password-requirements">
+                    <h3>Password Requirements:</h3>
+                    <ul>
+                        <li id="length-check">At least 10 characters</li>
+                        <li id="letter-check">At least one letter</li>
+                        <li id="digit-check">At least one digit</li>
+                        <li id="symbol-check">At least one special symbol (!@#$%^&*)</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="mailto:pramodkumar.dhungana97@qmail.cuny.edu" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
