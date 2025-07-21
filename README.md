@@ -1,40 +1,43 @@
 # Web Development Course Website
 
+#This project is strictly intended to meet my CSCI 355 course requirement.
+
 A comprehensive website demonstrating various web development concepts including HTML5, CSS3, and JavaScript functionality.
 
-## Features
+[Features]
 
-### 🎓 Course Menu
+-Course Menu
 
 - **Kurose and Ross Author Page**: Direct link to the textbook authors' page
 - **W3Schools**: Link to the comprehensive web development learning platform
 - **GeeksforGeeks Web Development**: Link to web development tutorials and resources
 - **W3Schools How To**: Link to practical web development examples
 
-### 🌐 Browser Information
+-Browser Information
 
 - **Navigator**: Displays browser information including appName, product, appVersion, userAgent, platform, and language
 - **Window**: Shows window dimensions (innerHeight, innerWidth)
 - **Screen**: Displays screen properties (width, height, availWidth, availHeight, colorDepth, pixelDepth)
 - **Location**: Shows current page location information (href, hostname, pathname, protocol)
 
-### ⚙️ Configuration
+-Configuration
 
-- **Password Validation**: Interactive password form with real-time validation
-  - Minimum 10 characters
-  - At least one letter
-  - At least one digit
-  - At least one special symbol (!@#$%^&\*)
-  - Visual feedback with color-coded validation
+Password Validation: Interactive password form with real-time validation
 
-### 👨‍💻 About Section
+- Minimum 10 characters
+- At least one letter
+- At least one digit
+- At least one special symbol (!@#$%^&\*)
+- Visual feedback with color-coded validation
+
+-About Section
 
 - **Developer Information**: Personal information about the website developer
 - **Contact Form**: Email contact form that opens the default email client
 
-## Technical Features
+-Technical Features
 
-### 🎨 Modern Design
+-Modern Design
 
 - Responsive design that works on all device sizes
 - Modern gradient background
@@ -42,7 +45,7 @@ A comprehensive website demonstrating various web development concepts including
 - Smooth animations and transitions
 - Professional color scheme
 
-### 🔧 Interactive Elements
+-Interactive Elements
 
 - Dropdown navigation menus
 - Modal windows for information display
@@ -50,14 +53,14 @@ A comprehensive website demonstrating various web development concepts including
 - Form handling with email integration
 - Keyboard shortcuts (Escape to close modals)
 
-### 📱 Responsive Design
+-Responsive Design
 
 - Mobile-first approach
 - Adaptive navigation for different screen sizes
 - Touch-friendly interface
 - Optimized for tablets and desktops
 
-## File Structure
+-File Structure
 
 ```
 website/
@@ -67,7 +70,7 @@ website/
 └── README.md           # This documentation
 ```
 
-## Browser Compatibility
+-Browser Compatibility
 
 - Chrome (recommended)
 - Firefox
@@ -75,7 +78,7 @@ website/
 - Edge
 - Mobile browsers
 
-## How to Use
+-How to Use
 
 1. Open `index.html` in any modern web browser
 2. Navigate through the menu items to explore different features
@@ -84,28 +87,20 @@ website/
 5. Try the password validation feature
 6. Use the contact form to send emails
 
-## Technologies Used
+-Technologies Used
 
 - **HTML5**: Semantic markup and modern structure
 - **CSS3**: Advanced styling, animations, and responsive design
 - **JavaScript (ES6+)**: DOM manipulation, event handling, and browser APIs
 - **Web APIs**: Navigator, Window, Screen, and Location APIs
 
-## Development Notes
+-Development Notes
 
 - All browser information is retrieved using standard Web APIs
 - Password validation is client-side only (no backend storage)
 - Email functionality uses the `mailto:` protocol
 - Modal windows are fully accessible with keyboard navigation
 - Performance optimized with efficient event handling
-
-## Future Enhancements
-
-- Backend integration for password storage
-- Database for contact form submissions
-- User authentication system
-- Additional browser API demonstrations
-- Progressive Web App (PWA) features
 
 ---
 

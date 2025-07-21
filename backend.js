@@ -1,7 +1,14 @@
+/*
+    Author: Pramod Dhungana
+
+    I built this JavaScript file for my CSCI 355 Web Design project at Queens College.
+    I used DOM manipulation, event handling, and Web APIs to make the site interactive and user-friendly.
+    Every feature here was coded by me to demonstrate my web development skills.
+*/
 // Global variables
 let currentModal = null;
 
-// DOM Content Loaded Event
+// When the page loads, I set up all the modals and password validation so everything works right away.
 document.addEventListener('DOMContentLoaded', function() {
     initializeModals();
     initializePasswordValidation();
@@ -12,7 +19,7 @@ function initializeModals() {
     const modals = document.querySelectorAll('.modal');
     const closeButtons = document.querySelectorAll('.close');
 
-    // Close modal when clicking on X
+    // I wrote this function to handle opening and closing modals, including clicking outside or pressing Escape.
     closeButtons.forEach(button => {
         button.addEventListener('click', function() {
             const modal = this.closest('.modal');
@@ -37,7 +44,8 @@ function initializeModals() {
     });
 }
 
-// Initialize password validation
+// I wrote this function to set up real-time password validation using DOM events.
+// Whenever the user types in the password field, my code checks the requirements and gives instant feedback.
 function initializePasswordValidation() {
     const passwordInput = document.getElementById('password');
     if (passwordInput) {
@@ -63,7 +71,7 @@ function closeModal(modal) {
     }
 }
 
-// Browser Information Functions
+// I created these functions to show browser, window, screen, and location info using JavaScript's Web APIs.
 function showNavigatorInfo() {
     const content = `
         <h2>Navigator Information</h2>
@@ -256,7 +264,7 @@ function resetPasswordRequirements() {
     });
 }
 
-// Developer Information Functions
+// When someone clicks 'Developer Info', I show my bio and portfolio link in a modal.
 function showDeveloperInfo() {
     const content = `
         <div class="developer-info">
@@ -276,7 +284,7 @@ function showContactForm() {
     openModal('contactModal');
 }
 
-// Form submission handling
+// I made this function to open the contact form modal so users can email me directly.
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -305,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Additional utility functions
+// I added this utility to update the main content area dynamically if needed.
 function updateDynamicContent(content) {
     const dynamicContent = document.getElementById('dynamic-content');
     if (dynamicContent) {
