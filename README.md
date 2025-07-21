@@ -23,6 +23,7 @@ A comprehensive website demonstrating various web development concepts including
 -Configuration
 
 Password Validation: Interactive password form with real-time validation
+<<<<<<< HEAD
 
 - Minimum 10 characters
 - At least one letter
@@ -30,6 +31,14 @@ Password Validation: Interactive password form with real-time validation
 - At least one special symbol (!@#$%^&\*)
 - Visual feedback with color-coded validation
 
+=======
+  - Minimum 10 characters
+  - At least one letter
+  - At least one digit
+  - At least one special symbol (!@#$%^&\*)
+  - Visual feedback with color-coded validation
+
+>>>>>>> da2e7b65d0b928c004c94542b668c31ae3a73372
 -About Section
 
 - **Developer Information**: Personal information about the website developer
@@ -102,6 +111,10 @@ website/
 - Modal windows are fully accessible with keyboard navigation
 - Performance optimized with efficient event handling
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> da2e7b65d0b928c004c94542b668c31ae3a73372
 ---
 
 **Created for Web Development Course**  
